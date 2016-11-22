@@ -1,17 +1,17 @@
 <idea-plugin version="2">
     <id>me.chunsheng.plugin.shortcut</id>
     <name>EasyShortcut</name>
-    <version>1.0</version>
+    <version>1.0.2</version>
     <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
     <description><![CDATA[
-      EasyShortcut 是使用Intelij系列开发工具中常用的必备快捷键介绍,查看方便,并且更容易记住快捷键.<br>
-      <em>most HTML tags may be used</em>
+      EasyShortcut 是使用IntelliJ IDEA系列开发工具中常用的快捷键介绍,查看方便,并且更容易记住快捷键.<br>
+      <em>绝对是开发必备神器,欢迎下载该插件使用,掌握这些快捷键,绝对会提高开发效率.</em>
     ]]></description>
 
     <change-notes><![CDATA[
-      Version 1.0 基础快捷键的加入.<br>
-      <em>most HTML tags may be used</em>
+      Version 1.0.2 基础快捷键的加入.<br>
+      <em>UI界面比较丑陋,后续版本会继续更新,让界面更友好</em>
     ]]>
     </change-notes>
 

@@ -25,7 +25,7 @@ public class AboutDialog extends AnAction {
                         "本插件详细简介:\nhttp://chunsheng.me" +
                         "\n\n本插件开发目的:\n为了方便查询,牢记常用快捷键." +
                         "\n\n本插件展示快捷键来自:\nhttps://github.com/pavlospt/Android-Studio-Tips-by-Philippe-Breault/wiki\n" +
-                        "https://github.com/xitu/gold-miner/blob/master/TODO/Android-Studio-Tips.md" +
+                        "https://github.com/xitu/gold-miner/blob/master/TODO/Android-Studio-Tips.md\n" +
                         "*\n" +
                         "*\n" +
                         "************************************************************************************";
@@ -34,7 +34,7 @@ public class AboutDialog extends AnAction {
                         "本插件Github地址", "关闭"
                 }, 0, new ImageIcon(getClass().getResource("/icons/jetbrains_large.png")), null);
         if (i == 0) {
-            BrowserLauncher.getInstance().open("http://chunsheng.me");
+            BrowserLauncher.getInstance().open("https://github.com/hpu-spring87/EasyShortcut");
         }
     }
 }
