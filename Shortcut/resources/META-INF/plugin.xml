@@ -1,0 +1,293 @@
+<idea-plugin version="2">
+    <id>me.chunsheng.plugin.shortcut</id>
+    <name>EasyShortcut</name>
+    <version>1.0</version>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+      EasyShortcut 是使用Intelij系列开发工具中常用的必备快捷键介绍,查看方便,并且更容易记住快捷键.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Version 1.0 基础快捷键的加入.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="EasyShortcut.SampleMenu" text="必备快捷键" description="显示常用汉化版快捷键">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="Tips.Diakog_1" class="me.chunsheng.shortcut.TipsDialog"
+                    text="1.分析传入数据流(Analyze data flow to here)"
+                    description="1.分析传入数据流(Analyze data flow to here)"/>
+
+            <action id="Tips.Diakog_2" class="me.chunsheng.shortcut.TipsDialog"
+                    text="2.堆栈追踪分析(Analyze Stacktrace)"
+                    description="2.堆栈追踪分析(Analyze Stacktrace)"/>
+
+            <action id="Tips.Diakog_3" class="me.chunsheng.shortcut.TipsDialog"
+                    text="3.关联调试程序(Attach Debugger)"
+                    description="3.关联调试程序(Attach Debugger)"/>
+
+            <action id="Tips.Diakog_4" class="me.chunsheng.shortcut.TipsDialog"
+                    text="4.书签(Bookmarks)"
+                    description="4.书签(Bookmarks)"/>
+
+            <action id="Tips.Diakog_5" class="me.chunsheng.shortcut.TipsDialog"
+                    text="5.折叠/展开代码块(Collapse Expand Code Block)"
+                    description="5.折叠/展开代码块(Collapse Expand Code Block)"/>
+
+            <action id="Tips.Diakog_6" class="me.chunsheng.shortcut.TipsDialog"
+                    text="6.列选择/块选择(Column Selection)"
+                    description="6.列选择/块选择(Column Selection)"/>
+
+            <action id="Tips.Diakog_7" class="me.chunsheng.shortcut.TipsDialog"
+                    text="7.与分支比对(Compare With Branch (Git))"
+                    description="7.与分支比对(Compare With Branch (Git))"/>
+
+            <action id="Tips.Diakog_8" class="me.chunsheng.shortcut.TipsDialog"
+                    text="8.与剪切板比对(Compare With Clipboard)"
+                    description="8.与剪切板比对(Compare With Clipboard)"/>
+
+            <action id="Tips.Diakog_9" class="me.chunsheng.shortcut.TipsDialog"
+                    text="9.语句补全(Complete Statement)"
+                    description="9.语句补全(Complete Statement)"/>
+
+            <action id="Tips.Diakog_10" class="me.chunsheng.shortcut.TipsDialog"
+                    text="10.条件断点(Conditional Breakpoints)"
+                    description="10.条件断点(Conditional Breakpoints)"/>
+
+            <action id="Tips.Diakog_11" class="me.chunsheng.shortcut.TipsDialog"
+                    text="11.上下文信息(Context Info)"
+                    description="11.上下文信息(Context Info)"/>
+
+            <action id="Tips.Diakog_12" class="me.chunsheng.shortcut.TipsDialog"
+                    text="12.删除行(Delete Line)"
+                    description="12.删除行(Delete Line)"/>
+
+            <action id="Tips.Diakog_13" class="me.chunsheng.shortcut.TipsDialog"
+                    text="13.禁用断点(Disable Breakpoints)"
+                    description="13.禁用断点(Disable Breakpoints)"/>
+
+            <action id="Tips.Diakog_14" class="me.chunsheng.shortcut.TipsDialog"
+                    text="14.行复制(Duplicate Line)"
+                    description="14.行复制(Duplicate Line)"/>
+
+            <action id="Tips.Diakog_15" class="me.chunsheng.shortcut.TipsDialog"
+                    text="15.编写正则表达式(Edit Regex)"
+                    description="15.编写正则表达式(Edit Regex)"/>
+
+            <action id="Tips.Diakog_16" class="me.chunsheng.shortcut.TipsDialog"
+                    text="16.使用Enter和Tab进行代码补全的差别(Enter vs Tab for Code Completion)"
+                    description="16.使用Enter和Tab进行代码补全的差别(Enter vs Tab for Code Completion)"/>
+
+            <action id="Tips.Diakog_17" class="me.chunsheng.shortcut.TipsDialog"
+                    text="17.计算表达式(Evaluate Expression)"
+                    description="17.计算表达式(Evaluate Expression)"/>
+
+            <action id="Tips.Diakog_18" class="me.chunsheng.shortcut.TipsDialog"
+                    text="18.提取方法(Extract Method)"
+                    description="18.提取方法(Extract Method)"/>
+
+            <action id="Tips.Diakog_19" class="me.chunsheng.shortcut.TipsDialog"
+                    text="19.提取参数(Extract Parameter)"
+                    description="19.提取参数(Extract Parameter)"/>
+
+            <action id="Tips.Diakog_20" class="me.chunsheng.shortcut.TipsDialog"
+                    text="20.提取变量(Extract Variable)"
+                    description="20.提取变量(Extract Variable)"/>
+
+            <action id="Tips.Diakog_21" class="me.chunsheng.shortcut.TipsDialog"
+                    text="21.查找操作(Find Action)"
+                    description="21.查找操作(Find Action)"/>
+
+            <action id="Tips.Diakog_22" class="me.chunsheng.shortcut.TipsDialog"
+                    text="22.查找补全(Find Complection)"
+                    description="22.查找补全(Find Complection)"/>
+
+            <action id="Tips.Diakog_23" class="me.chunsheng.shortcut.TipsDialog"
+                    text="23.隐藏所有面板(Hide All Panels)"
+                    description="23.隐藏所有面板(Hide All Panels)"/>
+
+            <action id="Tips.Diakog_24" class="me.chunsheng.shortcut.TipsDialog"
+                    text="24.高亮一切(Hightlight All the Things)"
+                    description="24.高亮一切(Hightlight All the Things)"/>
+
+            <action id="Tips.Diakog_25" class="me.chunsheng.shortcut.TipsDialog"
+                    text="25.内联(Inline)"
+                    description="25.内联(Inline)"/>
+
+            <action id="Tips.Diakog_26" class="me.chunsheng.shortcut.TipsDialog"
+                    text="26.审查变量(Inspect Variable)"
+                    description="26.审查变量(Inspect Variable)"/>
+
+            <action id="Tips.Diakog_27" class="me.chunsheng.shortcut.TipsDialog"
+                    text="27.合并行和文本(Join Lines and Literals)"
+                    description="27.合并行和文本(Join Lines and Literals)"/>
+
+            <action id="Tips.Diakog_28" class="me.chunsheng.shortcut.TipsDialog"
+                    text="28.回到上一个工具窗口(Jump to Last Tool Window)"
+                    description="28.回到上一个工具窗口(Jump to Last Tool Window)"/>
+
+            <action id="Tips.Diakog_29" class="me.chunsheng.shortcut.TipsDialog"
+                    text="29.上一个编辑位置(Last Edit Location)"
+                    description="29.上一个编辑位置(Last Edit Location)"/>
+
+            <action id="Tips.Diakog_30" class="me.chunsheng.shortcut.TipsDialog"
+                    text="30.动态模板(Live Templates)"
+                    description="30.动态模板(Live Templates)"/>
+
+            <action id="Tips.Diakog_31" class="me.chunsheng.shortcut.TipsDialog"
+                    text="31.日志断点(Logging Breakpoints)"
+                    description="31.日志断点(Logging Breakpoints)"/>
+
+            <action id="Tips.Diakog_32" class="me.chunsheng.shortcut.TipsDialog"
+                    text="32.标记对象(Mark Object)"
+                    description="32.标记对象(Mark Object)"/>
+
+            <action id="Tips.Diakog_33" class="me.chunsheng.shortcut.TipsDialog"
+                    text="33.在方法和内部类之间跳转(Move Between Methods and Inner Classes)"
+                    description="33.在方法和内部类之间跳转(Move Between Methods and Inner Classes)"/>
+
+            <action id="Tips.Diakog_34" class="me.chunsheng.shortcut.TipsDialog"
+                    text="34.上下移动行(Move Lines Up Down)"
+                    description="34.上下移动行(Move Lines Up Down)"/>
+
+            <action id="Tips.Diakog_35" class="me.chunsheng.shortcut.TipsDialog"
+                    text="35.移动方法(Move Methods)"
+                    description="35.移动方法(Move Methods)"/>
+
+            <action id="Tips.Diakog_36" class="me.chunsheng.shortcut.TipsDialog"
+                    text="36.定位到嵌套文件(Navigate to Nested File)"
+                    description="36.定位到嵌套文件(Navigate to Nested File)"/>
+
+            <action id="Tips.Diakog_37" class="me.chunsheng.shortcut.TipsDialog"
+                    text="37.定位到父类(Navigate to parent)"
+                    description="37.定位到父类(Navigate to parent)"/>
+
+            <action id="Tips.Diakog_38" class="me.chunsheng.shortcut.TipsDialog"
+                    text="38.取反补全(Negation Completion)"
+                    description="38.取反补全(Negation Completion)"/>
+
+            <action id="Tips.Diakog_39" class="me.chunsheng.shortcut.TipsDialog"
+                    text="39.根据编号打开面板(Open a Panel by Its Number)"
+                    description="39.根据编号打开面板(Open a Panel by Its Number)"/>
+
+            <action id="Tips.Diakog_40" class="me.chunsheng.shortcut.TipsDialog"
+                    text="40.在外部打开文件(Open File Externally)"
+                    description="40.在外部打开文件(Open File Externally)"/>
+
+            <action id="Tips.Diakog_41" class="me.chunsheng.shortcut.TipsDialog"
+                    text="41.参数信息(Parameter Info)"
+                    description="41.参数信息(Parameter Info)"/>
+
+            <action id="Tips.Diakog_42" class="me.chunsheng.shortcut.TipsDialog"
+                    text="42.后缀补全(Postfix Completion)"
+                    description="42.后缀补全(Postfix Completion)"/>
+
+            <action id="Tips.Diakog_43" class="me.chunsheng.shortcut.TipsDialog"
+                    text="43.快速查看定义(Quick Definition Lookup)"
+                    description="43.快速查看定义(Quick Definition Lookup)"/>
+
+            <action id="Tips.Diakog_44" class="me.chunsheng.shortcut.TipsDialog"
+                    text="44.最近修改的文件(Recently Changed Files)"
+                    description="44.最近修改的文件(Recently Changed Files)"/>
+
+            <action id="Tips.Diakog_45" class="me.chunsheng.shortcut.TipsDialog"
+                    text="45.最近访问(Recents)"
+                    description="45.最近访问(Recents)"/>
+
+            <action id="Tips.Diakog_46" class="me.chunsheng.shortcut.TipsDialog"
+                    text="46.重构(Refactor This)"
+                    description="46.重构(Refactor This)"/>
+
+            <action id="Tips.Diakog_47" class="me.chunsheng.shortcut.TipsDialog"
+                    text="47.相关文件(Related File)"
+                    description="47.相关文件(Related File)"/>
+
+            <action id="Tips.Diakog_48" class="me.chunsheng.shortcut.TipsDialog"
+                    text="48.重命名(Rename)"
+                    description="48.重命名(Rename)"/>
+
+            <action id="Tips.Diakog_49" class="me.chunsheng.shortcut.TipsDialog"
+                    text="49.返回到编辑器(Return to the Editor)"
+                    description="49.返回到编辑器(Return to the Editor)"/>
+
+            <action id="Tips.Diakog_50" class="me.chunsheng.shortcut.TipsDialog"
+                    text="50. Select In"
+                    description="50. Select In"/>
+
+            <action id="Tips.Diakog_51" class="me.chunsheng.shortcut.TipsDialog"
+                    text="51.分号/点 补全(Semicolon Dot Completion)"
+                    description="51.分号/点 补全(Semicolon Dot Completion)"/>
+
+            <action id="Tips.Diakog_52" class="me.chunsheng.shortcut.TipsDialog"
+                    text="52.显示当前运行点(Show Execution Point)"
+                    description="52.显示当前运行点(Show Execution Point)"/>
+
+            <action id="Tips.Diakog_53" class="me.chunsheng.shortcut.TipsDialog"
+                    text="53.扩大选择(Shrink Selection)"
+                    description="53.扩大选择(Shrink Selection)"/>
+
+            <action id="Tips.Diakog_54" class="me.chunsheng.shortcut.TipsDialog"
+                    text="54.终止进程(Stop Process)"
+                    description="54.终止进程(Stop Process)"/>
+
+            <action id="Tips.Diakog_55" class="me.chunsheng.shortcut.TipsDialog"
+                    text="55.Sublime Text式的多处选择(Sublime Text Multi Selection)"
+                    description="55.Sublime Text式的多处选择(Sublime Text Multi Selection)"/>
+
+            <action id="Tips.Diakog_56" class="me.chunsheng.shortcut.TipsDialog"
+                    text="56.包裹代码(Surround With)"
+                    description="56.包裹代码(Surround With)"/>
+
+            <action id="Tips.Diakog_57" class="me.chunsheng.shortcut.TipsDialog"
+                    text="57.临时断点(Temporary Breakpoints)"
+                    description="57.临时断点(Temporary Breakpoints)"/>
+
+            <action id="Tips.Diakog_58" class="me.chunsheng.shortcut.TipsDialog"
+                    text="58.调用层级树弹窗(The Call Hierarchy Popup)"
+                    description="58.调用层级树弹窗(The Call Hierarchy Popup)"/>
+
+            <action id="Tips.Diakog_59" class="me.chunsheng.shortcut.TipsDialog"
+                    text="59.文件结构弹窗(The File Structure Popup)"
+                    description="59.文件结构弹窗(The File Structure Popup)"/>
+
+            <action id="Tips.Diakog_60" class="me.chunsheng.shortcut.TipsDialog"
+                    text="60.切换器(The Switcher)"
+                    description="60.切换器(The Switcher)"/>
+
+            <action id="Tips.Diakog_61" class="me.chunsheng.shortcut.TipsDialog"
+                    text="61.移除包裹代码(Unwrap Remove)"
+                    description="61.移除包裹代码(Unwrap Remove)"/>
+
+            <action id="Tips.Diakog_62" class="me.chunsheng.shortcut.TipsDialog"
+                    text="62.版本控制操作弹窗(VCS Operations Popup)"
+                    description="62.版本控制操作弹窗(VCS Operations Popup)"/>
+
+
+            <action id="Windows.Textboxes" class="me.chunsheng.shortcut.WindowsKeyBox" text="Windows版完整快捷键"
+                    description="显示Windows版本快捷键"/>
+            <action id="Mac.Textboxes" class="me.chunsheng.shortcut.MacKeyBox" text="Mac版完整快捷键"
+                    description="显示Mac版本快捷键"/>
+            <action id="EasyShortcut.Dialog" class="me.chunsheng.shortcut.AboutDialog" text="关于"
+                    description="关于"/>
+        </group>
+    </actions>
+
+</idea-plugin>
